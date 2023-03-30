@@ -9,11 +9,10 @@ import org.springframework.security.core.userdetails.UserDetails;
 import com.generation.blogpessoal.model.Usuario;
 
 public class UserDetailsImpl implements UserDetails {
-
-	private static final Long serialVersionUID = 1L;
 	
+	private static final long serialVersionUID = 1L;
+		
 	private String userName;
-	
 	private String password;
 	
 	private List<GrantedAuthority> authorities;
@@ -24,42 +23,47 @@ public class UserDetailsImpl implements UserDetails {
 	}
 	
 	public UserDetailsImpl (){ }
-	
-	
-	
+
 	@Override
 	public Collection<? extends GrantedAuthority> getAuthorities() {
+		// TODO Auto-generated method stub
 		return authorities;
 	}
 
 	@Override
 	public String getPassword() {
+		// TODO Auto-generated method stub
 		return password;
 	}
 
 	@Override
 	public String getUsername() {
+		// TODO Auto-generated method stub
 		return userName;
 	}
 
 	@Override
 	public boolean isAccountNonExpired() {
+		// TODO Auto-generated method stub
 		return true;
 	}
 
 	@Override
 	public boolean isAccountNonLocked() {
-	   return true;
+		// TODO Auto-generated method stub
+		return true;
 	}
 
 	@Override
 	public boolean isCredentialsNonExpired() {
-	  return true;
+		// TODO Auto-generated method stub
+		return true;
 	}
 
 	@Override
 	public boolean isEnabled() {
-	  return true;
+		// TODO Auto-generated method stub
+		return true;
 	}
 
 }
